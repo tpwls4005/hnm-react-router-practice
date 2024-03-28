@@ -33,9 +33,12 @@ const Navbar = () => {
                     ))}
                 </ul>
 
-                <div className='Search-area'>
-                    < FontAwesomeIcon icon={faSearch}/>
-                    <input type="text"/>
+                <div className='search-area'>
+                    <FontAwesomeIcon icon={faSearch} />
+                    <input type="text" placeholder="검색어를 입력하세요" className="search-input" />
+                    {/* 검색 바에 placeholder 추가 */}
+                    <button className="search-button">검색</button>
+                    {/* 검색 버튼 추가 */}
                 </div>
             </div>
         </div>
