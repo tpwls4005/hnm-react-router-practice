@@ -2,6 +2,7 @@
   display: flex;
   justify-content: flex-end;
   margin: 30px;
+  cursor: pointer;
 }
 
 .nav-section{
@@ -27,4 +28,30 @@
 
 .Search-area {
   margin-left: 400px; /* 오른쪽으로 이동 */
+}
+
+/* ProductCard.css */
+
+.product-card {
+  /* 카드 스타일 */
+  width: 240px; /* 고정된 카드의 너비 */
+  height: 450px; /* 고정된 카드의 높이 */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: transform 0.3s ease; /* 호버 애니메이션 효과를 부드럽게 적용합니다. */
+}
+
+.product-card:hover {
+  transform: scale(1.05); /* 호버 시 카드를 1.05배 확대합니다. */
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease; /* 호버 애니메이션 효과를 부드럽게 적용합니다. */
+}
+
+.product-image:hover {
+  transform: scale(1.1); /* 호버 시 이미지를 1.1배 확대합니다. */
 }

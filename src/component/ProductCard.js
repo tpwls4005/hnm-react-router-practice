@@ -1,12 +1,10 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import ReactImageZoom from 'react-image-zoom';
 
 const ProductCard =({item})=>{
 
     return(
-    <div>
-        <img src={item?.img} width={211} height={316}/>
+    <div className="product-card">
+        <img src={item?.img} width={211} height={316} className="product-image"/>
         <div>{item?.new === true?"Conscious choice":" "}</div>
         <div>{item?.title}</div>
         <div>{item?.prize}</div>

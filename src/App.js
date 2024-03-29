@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Routes, Route } from 'react-router-dom';
@@ -8,6 +8,7 @@ import ProductDetail from './page/ProductDetail';
 import Navbar from './component/Navbar';
 
 function App() {
+  const[authenticate, setAuthenticate]=useState(false) //true 로그인
   return (
     <div>
       <Navbar/>
