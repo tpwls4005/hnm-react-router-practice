@@ -2,12 +2,15 @@ import React from 'react';
 import { Container } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
+import { useNavigate } from 'react-router-dom';
 
-const Login =()=>{
+const Login =({setAuthenticate})=>{
+    const navigate = useNavigate();
     const loginUser =(event)=>{
         event.preventDefault();
         console.log("login user function issue");
-        ;
+        setAuthenticate(true);
+        navigate("/");
     }
     return(
     <Container>
@@ -35,4 +38,5 @@ const Login =()=>{
     );
 };
 //form은 refresh를 함
+//form을 쓰게 된다면 event.preventDefault()함수를 써야함
 export default Login;
