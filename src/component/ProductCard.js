@@ -9,7 +9,7 @@ const ProductCard =({item})=>{
 
     return(
     <div className="product-card" onClick={showDetail}>
-        <img src={item?.img} width={211} height={316} className="product-image"/>
+        <img src={item?.img} width={211} height={316} className="product-image" alt="" />
         <div>{item?.new === true?"Conscious choice":" "}</div>
         <div>{item?.title}</div>
         <div>{item?.prize}</div>
